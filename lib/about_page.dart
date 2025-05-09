@@ -8,3 +8,4 @@ class AboutPage extends StatelessWidget {
     return const Placeholder();
   }
 }
+
