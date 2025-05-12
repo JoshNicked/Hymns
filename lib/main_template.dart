@@ -5,7 +5,6 @@ import 'package:hymnals/home_page.dart';
 import 'package:hymnals/songs_page.dart';
 
 
-
 class MainTemplate extends StatelessWidget {
   const MainTemplate({super.key});
 
