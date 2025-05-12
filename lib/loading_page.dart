@@ -8,7 +8,7 @@ class LoadingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   Future.delayed(Duration(seconds: 4),() {
-    Navigator.pushReplacementNamed(context, 'home_page');
+    Navigator.pushReplacementNamed(context, 'main_template');
   });
 
 

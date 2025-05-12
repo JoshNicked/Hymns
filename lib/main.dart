@@ -3,6 +3,7 @@ import 'package:hymnals/about_page.dart';
 import 'package:hymnals/favorites_page.dart';
 import 'package:hymnals/home_page.dart';
 import 'package:hymnals/loading_page.dart';
+import 'package:hymnals/main_template.dart';
 import 'package:hymnals/songs_page.dart';
 
 
@@ -20,6 +21,7 @@ class HymnsApp extends StatelessWidget {
       initialRoute: 'loading_in_page',
       routes: {
         'loading_in_page': (context) => LoadingPage(),
+        'main_template': (context) => MainTemplate(),
         'home_page': (context) => HomePage(),
         'favorites_page': (context) => FavoritesPage(),
         'songs_page': (context) => SongsPage(),
