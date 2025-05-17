@@ -4,6 +4,7 @@ import 'package:hymnals/favorites_page.dart';
 import 'package:hymnals/home_page.dart';
 import 'package:hymnals/loading_page.dart';
 import 'package:hymnals/main_template.dart';
+import 'package:hymnals/songs_detail_page.dart';
 import 'package:hymnals/songs_page.dart';
 
 
@@ -13,6 +14,8 @@ void main() {
 
 class HymnsApp extends StatelessWidget {
   const HymnsApp({super.key});
+  
+  get index => null;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +28,7 @@ class HymnsApp extends StatelessWidget {
         'home_page': (context) => HomePage(),
         'favorites_page': (context) => FavoritesPage(),
         'songs_page': (context) => SongsPage(),
+        'placeholder': (context) => SongsDetailPage(index: index),
         'about_page': (context) => AboutPage()
       },
     );

@@ -27,7 +27,7 @@ class MainTemplatePage extends StatefulWidget {
 class _HomePageState extends State<MainTemplatePage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _pages = <Widget>[
+  static final List<Widget> _pages = <Widget>[
 
     Center(
       child: HomePage()
@@ -50,7 +50,8 @@ class _HomePageState extends State<MainTemplatePage> {
 
   void _onSelectItem(int index, String newTitle) {
     Navigator.pop(context);
-    setState(() {       _appBarTitle = newTitle;
+    setState(() {       
+      _appBarTitle = newTitle;
       _selectedIndex = index;
     });
   }
@@ -58,8 +59,8 @@ class _HomePageState extends State<MainTemplatePage> {
   @override
   Widget build(BuildContext context) {
 
-    final selectedNavMenu = Colors.amber;
-    final selectedNavMenuBG = Colors.green.shade100;
+    final selectedNavMenu = Color(0xFF1130BC);
+    final selectedNavMenuBG = Color(0Xffb9d6ff);
 
     return Scaffold(
       appBar: AppBar(
@@ -85,7 +86,7 @@ class _HomePageState extends State<MainTemplatePage> {
 
             ListTile(
               leading: Icon(Icons.home_rounded, 
-                color: _selectedIndex == 0 ? selectedNavMenu : null
+                color: _selectedIndex == 0 ? selectedNavMenu : null,
               ),
               title: Text(
                 'Home',
